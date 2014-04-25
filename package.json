@@ -1,0 +1,17 @@
+{
+  "name": "arp.js",
+  "version": "0.0.1",
+  "description": "Manipulate ARP packets and read ARP tables using Javascript",
+  "main": "index.js",
+  "dependencies": {
+
+  },
+  "engines": {
+    "node": ">= 0.8.0"
+  },
+  "author": {
+    "name": "Ahamed Nafeez",
+    "email": "ahamed.nafeez@gmail.com"
+  },
+  "license": "MIT"
+}
