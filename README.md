@@ -8,7 +8,7 @@
 *  Send ARP packets with complete control.
 *  Parse the OS ARP table.
 *  ARP Poison a given target.
-*  
+
 
 #### Install
 
@@ -29,9 +29,23 @@ arp.send({
   'src_ip': '10.105.50.100',
   'dst_ip': '10.105.50.1',
   'src_mac': '8f:3f:20:33:54:44',
-  'dst_mac': 'ff:ff:ff:ff:ff:ff',
+  'dst_mac': 'ff:ff:ff:ff:ff:ff'
   });
+```
 
+###### Read the ARP Table
+
+```javascript
+arp.table(function(err, table){
+  console.log(table);
+});
+```
+
+###### Poison ARP Entires on the network
+Tells 192.168.2.5 that I am 192.168.2.3, a.k.a. Sends a gratuitous ARP Reply
+ to 192.168.25 telling that the MAC Address of 192.168.2.3 is its own MAC.
+```javascipt
+arp.poison('192.168.2.5', '192.168.2.3');
 ```
 
 #### Available Options
@@ -51,7 +65,11 @@ arp.send({
 
 #### Prerequisite
 
-*  **Libpcap**, used by node-pcap -> We use LIBPCAP's send binding for ARP packets.
+*  **Libpcap**, used by node-pcap. We use LIBPCAP's send binding for ARP packets.
+
+#### Platforms tested
+
+*  **Mac OSX** - 10.9.2
 
 
 #### Modules used / Credits
