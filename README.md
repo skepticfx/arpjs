@@ -1,4 +1,4 @@
-## arp.js
+## arpjs
 
 ### Send ARP packets and read ARP tables using Javascript
 
@@ -41,9 +41,9 @@ arp.table(function(err, table){
 });
 ```
 
-###### Poison ARP Entires on the network
+###### Poison ARP Entries on the network
 Tells 192.168.2.5 that I am 192.168.2.3, a.k.a. Sends a gratuitous ARP Reply
- to 192.168.25 telling that the MAC Address of 192.168.2.3 is its own MAC.
+ to 192.168.2.5 telling that the MAC Address of 192.168.2.3 is its own MAC.
 ```javascipt
 arp.poison('192.168.2.5', '192.168.2.3');
 ```
