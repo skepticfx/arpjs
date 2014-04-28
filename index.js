@@ -1,6 +1,5 @@
 var arp_table = require('./lib/arp_table.js');
+var arp_packet = require('./lib/packet.js');
 
-arp_table.fetch(function(err, data){
-
-  console.log(data);
-})
+exports.send = arp_packet.send;
+exports.table = arp_table.fetch;

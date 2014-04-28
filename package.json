@@ -1,10 +1,12 @@
 {
-  "name": "arp.js",
+  "name": "arpjs",
   "version": "0.0.1",
-  "description": "Manipulate ARP packets and read ARP tables using Javascript",
+  "description": "Send ARP packets and read ARP tables using Javascript",
   "main": "index.js",
   "dependencies": {
-
+    "pcap": "*",
+    "ip": "*",
+    "getmac": "*"
   },
   "engines": {
     "node": ">= 0.8.0"
