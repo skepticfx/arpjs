@@ -1,12 +1,16 @@
 {
   "name": "arpjs",
-  "version": "0.0.3",
+  "version": "0.1.0",
   "description": "Send ARP packets and read ARP tables using Javascript",
   "main": "index.js",
   "dependencies": {
     "pcap": "*",
     "ip": "*",
     "getmac": "*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/skepticfx/arpjs.git"
   },
   "engines": {
     "node": ">= 0.8.0"
@@ -15,5 +19,19 @@
     "name": "Ahamed Nafeez",
     "email": "ahamed.nafeez@gmail.com"
   },
-  "license": "MIT"
+  "license": "MIT",
+   "keywords": [
+    "arp",
+    "mitm",
+    "arp poison",
+    "man in the midddle",
+    "gratuitous arp",
+    "arp spoofing",
+    "packets"
+  ],
+  "bugs": {
+    "url": "https://github.com/skepticfx/arpjs/issues"
+  },
+  "homepage": "https://github.com/skepticfx/arpjs",
+  "readmeFilename": "README.md"
 }

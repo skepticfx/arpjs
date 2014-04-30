@@ -2,6 +2,7 @@
 
 ### Send ARP packets and read ARP tables using Javascript
 
+** Works only on Mac OSX for now **
 
 #### Features
 
@@ -71,6 +72,9 @@ arp.poison('192.168.2.5', '192.168.2.3');
 
 *  **Mac OSX** - 10.9.2
 
+#### TODO
+*  Support Linux Platforms
+*  Integrate unit test cases
 
 #### Modules used / Credits
 * [node_pcap](https://github.com/mranney/node_pcap)
