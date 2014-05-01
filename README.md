@@ -34,6 +34,16 @@ arp.send({
   });
 ```
 
+###### Selecting a network interface
+
+By default, arpjs selects one of the active network interfaces to send the packet.
+If you want to select a particular interface, use the `setInterface` method.
+
+```javascript
+arp.setInterface("wlan0");
+arp.send(packet);
+```
+
 ###### Read the ARP Table
 
 ```javascript
