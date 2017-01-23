@@ -71,6 +71,9 @@ arp.poison('192.168.2.5', '192.168.2.3');
   'dst_mac': Destination MAC (02:86:32:1f:2e:7c) // String
 ```
 
+#### Debug
+
+    $ sudo DEBUG=arpjs:* node example.js
 
 #### Prerequisite
 
@@ -85,6 +88,7 @@ arp.poison('192.168.2.5', '192.168.2.3');
 * [node_pcap](https://github.com/mranney/node_pcap)
 * [node-ip](https://github.com/indutny/node-ip)
 * [getmac](https://www.npmjs.org/package/getmac)
+* [debug](https://www.npmjs.org/package/debug)
 
 #### License
 
