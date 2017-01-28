@@ -2,6 +2,8 @@
 
 ### Send ARP packets and read ARP tables using Javascript
 
+[![Standard - JavaScript Style Guide](https://cdn.rawgit.com/feross/standard/master/badge.svg)](https://github.com/feross/standard)
+
 #### Features
 
 *  Send ARP packets with complete control.
