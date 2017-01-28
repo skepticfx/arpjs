@@ -17,7 +17,7 @@
 
 ###### Include arpjs in your code
 ```javascript
-var arp = require('arpjs');
+var arp = require('arpjs')
 ```
 
 ###### Send an ARP Request
@@ -29,7 +29,7 @@ arp.send({
   'dst_ip': '10.105.50.1',
   'src_mac': '8f:3f:20:33:54:44',
   'dst_mac': 'ff:ff:ff:ff:ff:ff'
-  });
+  })
 ```
 
 ###### Selecting a network interface
@@ -38,23 +38,23 @@ By default, arpjs selects one of the active network interfaces to send the packe
 If you want to select a particular interface, use the `setInterface` method.
 
 ```javascript
-arp.setInterface("wlan0");
-arp.send(packet);
+arp.setInterface('wlan0')
+arp.send(packet)
 ```
 
 ###### Read the ARP Table
 
 ```javascript
 arp.table(function(err, table){
-  console.log(table);
-});
+  console.log(table)
+})
 ```
 
 ###### Poison ARP Entries on the network
 Tells 192.168.2.5 that I am 192.168.2.3, a.k.a. Sends a gratuitous ARP Reply
  to 192.168.2.5 telling that the MAC Address of 192.168.2.3 is its own MAC.
-```javascipt
-arp.poison('192.168.2.5', '192.168.2.3');
+```javascript
+arp.poison('192.168.2.5', '192.168.2.3')
 ```
 
 #### Available Options

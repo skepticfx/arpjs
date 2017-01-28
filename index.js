@@ -1,16 +1,16 @@
-var arp_table = require('./lib/arp_table.js');
-var arp_packet = require('./lib/packet.js');
+var arpTable = require('./lib/arp_table.js')
+var arpPacket = require('./lib/packet.js')
 
-exports.send = arp_packet.send;
-exports.setInterface = arp_packet.setInterface;
-exports.table = arp_table.fetch;
+exports.send = arpPacket.send
+exports.setInterface = arpPacket.setInterface
+exports.table = arpTable.fetch
 
 // Sends a Gratiutious ARP packet poisoning the given IP
-exports.poison = function(ip1, ip2) {
-  arp_packet.send({
+exports.poison = function (ip1, ip2) {
+  arpPacket.send({
     'op': 'reply',
     'src_ip': ip2,
     'dst_ip': ip1,
     'dst_mac': 'ff:ff:ff:ff:ff:ff'
-  });
+  })
 }
