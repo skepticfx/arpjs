@@ -7,7 +7,7 @@
     "test": "standard"
   },
   "dependencies": {
-    "debug": "2.6.0",
+    "debug": "^3.1.0",
     "getmac": "1.0.7",
     "ip": "1.0.2",
     "pcap": "mranney/node_pcap"
