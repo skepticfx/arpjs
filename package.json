@@ -10,7 +10,7 @@
     "debug": "^3.1.0",
     "getmac": "1.0.7",
     "ip": "1.0.2",
-    "pcap": "mranney/node_pcap"
+    "pcap": "git+https://github.com/realdennis/node_pcap.git"
   },
   "repository": {
     "type": "git",
