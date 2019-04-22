@@ -1,6 +1,6 @@
 {
   "name": "arpjs",
-  "version": "1.1.12",
+  "version": "1.2.0",
   "description": "Send ARP packets and read ARP tables using Javascript",
   "main": "index.js",
   "scripts": {
