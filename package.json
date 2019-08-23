@@ -39,6 +39,6 @@
   "homepage": "https://github.com/skepticfx/arpjs",
   "readmeFilename": "README.md",
   "devDependencies": {
-    "standard": "14.0.0"
+    "standard": "14.0.2"
   }
 }
